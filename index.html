@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Bootstrap Portfolio</title>
   </head>
   <body>
@@ -27,16 +28,22 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
+              <a class="nav-link active" aria-current="page" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#Portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/Bhuminandan"><i class="fa-brands fa-github" style="color: #f8f9fa; font-size: 1.5rem; padding-top: 8px; padding-inline: 10px;"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/in/bhooomi/"><i class="fa-brands fa-linkedin" style="color: #f8f9fa; font-size: 1.5rem; padding-top: 8px; padding-inline: 10px;"></i></a>
             </li>
           </ul>
         </div>
@@ -45,15 +52,15 @@
 
     <header class="bg-light py-5 text-dark text-center ms-auto">
       <div class="container py-5">
-        <h1 class="dislay-4">Welcome to My Portfolio</h1>
+        <h1 class="display-3">Welcome to My Portfolio</h1>
         <p class="fs-3 lead">I am a frontend developer</p>
       </div>
     </header>
     <section class="py-5" id="about">
-      <div class="container">
+      <div class="container pb-4">
         <h2 class="text-center mb-4 fs-1">About me</h2>
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row d-flex justify-content-evenly">
+          <div class="col-md-3">
             <img
               src="https://media.licdn.com/dms/image/D4D03AQGOgR2pHFDBag/profile-displayphoto-shrink_800_800/0/1678548401179?e=1693440000&v=beta&t=NeL42iGghNXiJrVJCs2N3Rsn04PRc-NTi8QY7am-vdk"
               alt="myImage"
@@ -62,7 +69,7 @@
             />
           </div>
           <div class="col-md-6 my-auto">
-            <p class="fs-5 px-3 py-3">
+            <p class="fs-5 px-3 offset-1 py-3 mt-4">
               As a skilled full stack developer, my expertise lies in HTML, CSS,
               and JavaScript. With a strong focus on creating seamless user
               experiences and a keen eye for design, I am dedicated to crafting
@@ -76,8 +83,8 @@
     <section class="py-5 bg-light" id="Portfolio">
       <div class="container">
         <h2 class="text-center mb-4">Portfolio</h2>
-        <div class="row">
-          <div class="col-md-6 border border-dark rounded border-2 bg-dark">
+        <div class="row pt-4 pb-4 d-flex justify-content-evenly">
+          <div class="col-md-5 mb-2 border border-dark rounded border-2 bg-dark">
             <div class="card mt-3">
               <img
                 src="../Portfolio-bootstrap/Resources/Swiggy.JPG"
@@ -85,18 +92,18 @@
               />
             </div>
             <div
-              class="card-body w-40 flex-column text-light d-flex justify-content-center mx-auto text-center"
+              class="card-body flex-column text-light d-flex justify-content-evenly mx-auto text-center"
             >
               <h5 class="card-title">Swiggy Clone</h5>
               <div class="card-text text-light mb-3">
-                This is a exact replica of swiggy, made with using only html and
+                This is a exact replica of swiggy, made using html and
                 pure css!
               </div>
-              <a href="https://bhuminandan.github.io/Swiggy-Clone-HTML-CSS/" class="btn btn-light active" role="button" aria-pressed="true">Learn More</a>
+              <a href="https://bhuminandan.github.io/Swiggy-Clone-HTML-CSS/" class="btn btn-light active" role="button" aria-pressed="true">GitHub Link</a>
 
             </div>
           </div>
-          <div class="col-md-6 border border-dark rounded border-2 bg-dark">
+          <div class="col-md-5 border border-dark rounded border-2 bg-dark">
             <div class="card mt-3">
               <img
                 src="../Portfolio-bootstrap/Resources/UsabilityHub.JPG"
@@ -104,13 +111,13 @@
               />
             </div>
             <div
-              class="card-body w-40 flex-column text-light d-flex justify-content-center mx-auto text-center"
+              class="card-body flex-column text-light d-flex justify-content-center mx-auto text-center"
             >
               <h5 class="card-title">UsabilityHub Hero Section</h5>
               <div class="card-text text-light mb-3">
                 This is a clone hero section of UsabilityHub.Com
               </div>
-              <a href="https://bhuminandan.github.io/UsabilityHub-Clone/" class="btn btn-light active" role="button" aria-pressed="true">Learn More</a>
+              <a href="https://bhuminandan.github.io/UsabilityHub-Clone/" class="btn btn-light active" role="button" aria-pressed="true">GitHub Link</a>
             </div>
         </div>
     </section>
@@ -137,14 +144,13 @@
                   required
                 ></textarea>
               </div>
-              <button class="btn btn-primary">Submit</button>
+              <button class="btn btn-dark">Submit</button>
             </form>
           </div>
         </div>
       </div>
     </section>
-    <footer class="bg-dark text-white text-center py-3">
-      2023 My Portfolio. All Rights Reserved Prince
+    <footer class="bg-dark text-white text-center py-3">&copy:2023 My Portfolio. All Rights Reserved Prince
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
